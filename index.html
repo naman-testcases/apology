@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff5f9e">
+  <title>For You, With Love ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hearts"></div>
+  <div class="grain"></div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+
+      <div class="eyebrow reveal">A tiny website made for one very special person</div>
+      <div class="heart-logo reveal">♡</div>
+      <h1 class="reveal">Hey, <span data-girl>My Love</span>...</h1>
+      <p class="hero-sub reveal">I made you a little something.<br>Because a normal “sorry” didn't feel enough. ❤️</p>
+
+      <button class="primary-btn reveal" onclick="scrollToSection('letter')">
+        Open this little surprise <span>↓</span>
+      </button>
+      <div class="scroll-hint">keep scrolling, pretty girl ✦</div>
+    </section>
+
+    <section class="letter section" id="letter">
+      <div class="section-tag">01 · what I really wanted to say</div>
+      <div class="letter-card glass reveal">
+        <div class="mini-heart">♥</div>
+        <h2>I owe you a proper apology.</h2>
+        <div class="letter-text">
+          <p><span data-girl>My Love</span>,</p>
+          <p>
+            I know I didn't handle our conversation the way I should have.
+            I was already messed up by everything going on around me,
+            but that's not an excuse for taking that frustration out on you.
+          </p>
+          <p>
+            You deserved patience, softness and understanding from me.
+            Instead, I got angry and walked away from the conversation.
+            And honestly? <strong>I'm sorry.</strong>
+          </p>
+          <p>
+            I don't want you to feel like you have to deal with my bad moments
+            on top of whatever you're already going through.
+            I should have been the person making things a little easier for you,
+            not another reason for you to feel upset.
+          </p>
+          <p>
+            I can't undo that moment, but I can take responsibility for it.
+            I'm going to work on myself, calm down before reacting,
+            and learn to communicate with you better.
+          </p>
+          <p class="signature">Still yours,<br><strong data-my-name>your idiot ❤️</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reasons section">
+      <div class="section-tag">02 · things I should never forget</div>
+      <h2 class="section-title reveal">Why you're so important to me</h2>
+      <div class="reason-grid">
+        <article class="reason-card reveal">
+          <span>01</span><div class="icon">🌷</div>
+          <h3>Your presence</h3>
+          <p>Even an ordinary day feels different when I get to talk to you.</p>
+        </article>
+        <article class="reason-card reveal">
+          <span>02</span><div class="icon">🫶</div>
+          <h3>The way you care</h3>
+          <p>You care in ways I notice more than I probably say out loud.</p>
+        </article>
+        <article class="reason-card reveal">
+          <span>03</span><div class="icon">✨</div>
+          <h3>Just you</h3>
+          <p>I don't need a perfect version of you. I love the real you.</p>
+        </article>
+        <article class="reason-card reveal">
+          <span>04</span><div class="icon">🏡</div>
+          <h3>Our little world</h3>
+          <p>The conversations, jokes, random moments and memories are precious to me.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="promise section">
+      <div class="promise-glow"></div>
+      <div class="section-tag">03 · one little promise</div>
+      <div class="promise-inner reveal">
+        <div class="big-heart">♥</div>
+        <h2>I'll do better.</h2>
+        <p>
+          Not just because I don't want you angry with me,
+          but because you deserve a version of me that knows how to love you
+          even when I'm having a bad day.
+        </p>
+        <div class="promise-list">
+          <div>♡ I'll pause before I react.</div>
+          <div>♡ I'll communicate instead of disappearing.</div>
+          <div>♡ I'll listen when you need me.</div>
+          <div>♡ I'll keep working on myself.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="interactive section">
+      <div class="section-tag">04 · okay, one last thing</div>
+      <h2 class="section-title reveal">Can I have a tiny chance?</h2>
+      <p class="center-copy reveal">You don't have to answer right now. Just press the button. 🥺</p>
+      <div class="button-area reveal">
+        <button class="yes-btn" onclick="sayYes()">yes, idiot ❤️</button>
+        <button class="maybe-btn" id="maybeBtn" onclick="moveMaybe()">hmm...</button>
+      </div>
+      <p id="button-message"></p>
+    </section>
+
+    <section class="final section" id="final">
+      <div class="final-particles"></div>
+      <div class="section-tag">05 · for you</div>
+      <div class="final-content reveal">
+        <div class="envelope" onclick="openEnvelope()">
+          <div class="envelope-flap"></div>
+          <div class="envelope-heart">♥</div>
+        </div>
+        <p class="tap-text">tap the letter ✦</p>
+        <div class="final-letter" id="finalLetter">
+          <h2>One more thing...</h2>
+          <p>
+            If you're reading this while you're still upset with me,
+            that's okay. You have every right to feel however you feel.
+          </p>
+          <p>
+            I'm not asking you to magically stop being angry.
+            I'm just asking you to know that <strong>I'm genuinely sorry</strong>,
+            and that I love you far more than my stupid reaction showed.
+          </p>
+          <p>
+            So take your time, breathe, drink some water, get cozy,
+            and whenever you're ready...
+          </p>
+          <p class="final-big">come back to me? 🥺❤️</p>
+          <p class="signature"><span data-girl>My Love</span>, you mean the world to me.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>made with an unnecessarily large amount of love by <span data-my-name>your idiot</span> ♡</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
