@@ -2,15 +2,15 @@
    💗 EASY CUSTOMIZATION — CHANGE THESE FIRST
    ========================================================= */
 const LOVE = {
-  herName: "My Love",          // Her main name / nickname
-  yourName: "your idiot",      // Your name / nickname
+  herName: "My Bubbu",          // Her main name / nickname
+  yourName: "Your Bhondu",      // Your name / nickname
 
   // Change these if you want different names anywhere else:
   extraNames: [
     // "Baby",
-    // "Princess",
-    // "My Girl",
-    // "Cutie"
+    // "Boobies",
+    // "Sweetuuu",
+    // "Cuttuu"
   ]
 };
 
